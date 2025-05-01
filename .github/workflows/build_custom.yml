@@ -29,7 +29,7 @@ jobs:
         with:
           context: .
           file: ./images/custom/Containerfile
-          build-args: APPS_JSON_BASE64=WyB7ICJ1cmwiOiAiaHR0cHM6Ly9naXRodWIuY29tL2ZyYXBwZS9lcnBuZXh0IiwgImJyYW5jaCI6ICJ2ZXJzaW9uLTE1IiB9LCB7ICJ1cmwiOiAiaHR0cHM6Ly9naXRodWIuY29tL2ZyYXBwZS9ocm1zIiwgImJyYW5jaCI6ICJ2ZXJzaW9uLTE1IiB9IF0K
+          build-args: FRAPPE_PATH=https://github.com/frappe/frappe,NODE_VERSION=18.20.2,PYTHON_VERSION=3.11.9,FRAPPE_BRANCH=version-15,APPS_JSON_BASE64=WyB7ICJ1cmwiOiAiaHR0cHM6Ly9naXRodWIuY29tL2ZyYXBwZS9lcnBuZXh0IiwgImJyYW5jaCI6ICJ2ZXJzaW9uLTE1IiB9LCB7ICJ1cmwiOiAiaHR0cHM6Ly9naXRodWIuY29tL2ZyYXBwZS9ocm1zIiwgImJyYW5jaCI6ICJ2ZXJzaW9uLTE1IiB9IF0K
           push: true
           tags: bennsel/frappe:latest,bennsel/frappe:15
           platforms: linux/amd64,linux/arm64/v8
