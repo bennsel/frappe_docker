@@ -28,11 +28,10 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: .
-          file: ./images/custom/Containerfile
+#          file: ./images/custom/Containerfile
+          file: ./images/layered/Containerfile
           build-args: |
             "FRAPPE_PATH=https://github.com/frappe/frappe"
-            "NODE_VERSION=18.18.2"
-            "PYTHON_VERSION=3.11.6"
             "FRAPPE_BRANCH=v15.67.0"
             "APPS_JSON_BASE64=WyB7ICJ1cmwiOiAiaHR0cHM6Ly9naXRodWIuY29tL2ZyYXBwZS9lcnBuZXh0IiwgImJyYW5jaCI6ICJ2MTUuNjAuMCIgfSwgeyAidXJsIjogImh0dHBzOi8vZ2l0aHViLmNvbS9mcmFwcGUvaHJtcyIsICJicmFuY2giOiAidjE1LjQ0LjIiIH0gXQo="
           push: true
