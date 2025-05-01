@@ -37,6 +37,6 @@ jobs:
             "APPS_JSON_BASE64=WyB7ICJ1cmwiOiAiaHR0cHM6Ly9naXRodWIuY29tL2ZyYXBwZS9lcnBuZXh0IiwgImJyYW5jaCI6ICJ2ZXJzaW9uLTE1IiB9LCB7ICJ1cmwiOiAiaHR0cHM6Ly9naXRodWIuY29tL2ZyYXBwZS9ocm1zIiwgImJyYW5jaCI6ICJ2ZXJzaW9uLTE1IiB9IF0K"
           push: true
           tags: bennsel/frappe:latest,bennsel/frappe:15
-          platforms: linux/amd64
+          platforms: linux/arm64/v8
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache
